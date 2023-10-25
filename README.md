@@ -13,10 +13,10 @@ The GitHub pages url is [this](https://datkumar.github.io/web-dev-coursera/) and
 
 Syntax: `http-server [path] [options]`
 
-Use via `npx` to use it on-demand
+Run via `npx` to use it on-demand
 
 ```sh
-npx http-server ./src -c-1
+npx http-server ./site -c-1
 ```
 
 Refer their [README](https://github.com/http-party/http-server#available-options) for using the options
