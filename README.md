@@ -3,7 +3,7 @@
 ---
 
 - [Environment Setup](./setup.md)
-- [HTML basics](./html.md)
+- [HTML basics](./html-basics.md)
 
 ---
 
