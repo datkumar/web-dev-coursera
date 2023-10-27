@@ -19,8 +19,6 @@
 
 ## Anatomy of HTML tag
 
-In the following HTML code:
-
 ```html
 <p id="ap01r" class="filler intro" onClick="alert('hi')">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
@@ -41,3 +39,27 @@ In the following HTML code:
 - No spaces between `<` and `p` or `/p` of the tags
 - At least one space required before and between attributes
 - Specify attributes ONLY in the opening tag
+
+---
+
+## Basic HTML Document Structure
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <h1>This is the homepage</h1>
+  </body>
+</html>
+```
+
+- The `<!doctype html>` standalone tag is used to indicate that the document is an HTML document to be rendered in **standard mode**. Without this tag, the browser assumes the document to be of some other format or legacy standards and it will be rendered in **quirks mode**. Refer [MDN page for Quirks & Standard modes](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode).
+- The `<html>...</html>` tags are HTML document
+- The `<head>...</head>` tags contain description about the content inside the page. This includes metadata, external resources to import, and the required `<title>...</title>` tags
+- The `<body>...</body>` tag is the **root** of all content that is visible to the user. It is also called as the **viewport**
+- The HTML document is rendered from top to bottom
