@@ -2,6 +2,7 @@
 
 ## Github Pages
 
+- Open `Pages` section inside repo `Settings`
 - Select `Deploy from branch` option with the branch as `main` and folder as `root(/)`
 - URL format is "https://`username`.github.io/`reponame`/"
 

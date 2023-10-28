@@ -63,3 +63,30 @@
 - The `<head>...</head>` tags contain description about the content inside the page. This includes metadata, external resources to import, and the required `<title>...</title>` tags
 - The `<body>...</body>` tag is the **root** of all content that is visible to the user. It is also called as the **viewport**
 - The HTML document is rendered from top to bottom
+
+---
+
+## HTML Content Models
+
+- Content model refers to the full behavior the browser applies to the elements belonging to that content model, and to the nesting rules of those elements. In other words, which elements are allowed to be nested inside which other elements
+- Before HTML5, there were only 2 content models; elements were either **block-level** or **inline**. HTML5 split these into 7 models with more complex rules. Refer the [W3C content models page](https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html)
+
+| Block-level elements                             | Inline elements                                   |
+| ------------------------------------------------ | ------------------------------------------------- |
+| Begin on a new line (by deafult)                 | Continue in the same line (by default)            |
+| Can contain both block or inline elements inside | Can only contain inline elements inside them      |
+| Rougly translate to **Flow Content** in HTML5    | Rougly translate to **Phrasing Content** in HTML5 |
+
+---
+
+## Semantic HTML Tags
+
+- Each type of HTML element tag some meaning about the type of content present inside it
+- Also, using semantic HTML tags help in SEO a lot of the times (esp. tags like `<h1>`)
+- Technically, you can get away with just using `<div>` and `<span>` tags but using semantic tags provides a **_more meaningful separation_** between the various parts of the document
+
+<p align="center">
+  <br>
+  <img  src='https://static.semrush.com/blog/uploads/media/cc/85/cc85d452a743e27f68d426df35e4da7d/original.png'  height='400'>
+  <br>
+</p>
