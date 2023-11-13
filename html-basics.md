@@ -81,7 +81,7 @@
 
 ## Semantic HTML Tags
 
-- Each type of HTML element tag some meaning about the type of content present inside it
+- Each type of HTML element tag has some meaning about the type of content present inside it
 - Also, using semantic HTML tags help in SEO a lot of the times (esp. tags like `<h1>`)
 - Technically, you can get away with just using `<div>` and `<span>` tags but using semantic tags provides a **_more meaningful separation_** between the various parts of the document
 
@@ -90,3 +90,109 @@
   <img  src='https://static.semrush.com/blog/uploads/media/cc/85/cc85d452a743e27f68d426df35e4da7d/original.png'  height='400'>
   <br>
 </p>
+
+---
+
+## Lists in HTML
+
+- Lists provide a natural & commnly-used grouping for content such as to-do lists, shopping lists, recipes etc.
+- In HTML, the `<ul>` (unordered list) and `<ol>` (ordered list) elements are block-level elements, and they are meant to contain list items i.e. `<li>`
+
+> **Unordered List:**
+
+```html
+<ul>
+  <li>Milk</li>
+  <li>Donuts</li>
+  <li>Cookies:</li>
+  <ul>
+    <li>Chocolates</li>
+    <li>Sugar</li>
+    <li>Peanut butter</li>
+  </ul>
+  <li>Pepto Bismol</li>
+</ul>
+```
+
+Output: 👇
+
+<ul>
+  <li>Milk</li>
+  <li>Donuts</li>
+  <li>Cookies:</li>
+  <ul>
+    <li>Chocolates</li>
+    <li>Sugar</li>
+    <li>Peanut butter</li>
+  </ul>
+  <li>Pepto Bismol</li>
+</ul>
+
+---
+
+> **Ordered List:**
+
+```html
+<ol>
+  <li>Open box</li>
+  <li>Take out cookie</li>
+  <li>
+    Make a Double Oreo
+    <ol>
+      <li>Peel off the top part</li>
+      <li>Place another cookie in the middle</li>
+      <li>Put back the top part</li>
+    </ol>
+  </li>
+  <li>Enjoy!</li>
+</ol>
+```
+
+Output: 👇
+
+<ol>
+  <li>Open box</li>
+  <li>Take out cookie</li>
+  <li>Make a Double Oreo
+    <ol>
+      <li>Peel off the top part</li>
+      <li>Place another cookie in the middle</li>
+      <li>Put back the top part</li>
+    </ol>
+  </li>
+  <li>Enjoy!</li>
+</ol>
+
+---
+
+> **When nesting one type of list inside another, the other list type should be wrapped within an `<li>` for valid HTML**
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>
+    <ol>
+      <li>Nested Item 1</li>
+      <li>Nested Item 2</li>
+    </ol>
+  </li>
+  <li>Item 3</li>
+</ul>
+```
+
+Output: 👇
+
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>
+    <ol>
+      <li>Nested Item 1</li>
+      <li>Nested Item 2</li>
+    </ol>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+---
