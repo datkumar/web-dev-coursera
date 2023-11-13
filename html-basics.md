@@ -104,12 +104,14 @@
 <ul>
   <li>Milk</li>
   <li>Donuts</li>
-  <li>Cookies:</li>
-  <ul>
-    <li>Chocolates</li>
-    <li>Sugar</li>
-    <li>Peanut butter</li>
-  </ul>
+  <li>
+    Cookies:
+    <ul>
+      <li>Chocolates</li>
+      <li>Sugar</li>
+      <li>Peanut butter</li>
+    </ul>
+  </li>
   <li>Pepto Bismol</li>
 </ul>
 ```
@@ -119,12 +121,13 @@ Output: 👇
 <ul>
   <li>Milk</li>
   <li>Donuts</li>
-  <li>Cookies:</li>
-  <ul>
-    <li>Chocolates</li>
-    <li>Sugar</li>
-    <li>Peanut butter</li>
-  </ul>
+  <li>Cookies:
+    <ul>
+      <li>Chocolates</li>
+      <li>Sugar</li>
+      <li>Peanut butter</li>
+    </ul>
+  </li>
   <li>Pepto Bismol</li>
 </ul>
 
@@ -165,16 +168,18 @@ Output: 👇
 
 ---
 
-> **When nesting one type of list inside another, the other list type should be wrapped within an `<li>` for valid HTML**
+> When nesting one list (ordered/unordered) inside another, the other list type should be wrapped within `<li>` for **valid HTML**
 
 ```html
 <ul>
   <li>Item 1</li>
   <li>Item 2</li>
   <li>
+    For nested items:
     <ol>
       <li>Nested Item 1</li>
       <li>Nested Item 2</li>
+      <li>Nested Item 3</li>
     </ol>
   </li>
   <li>Item 3</li>
@@ -187,9 +192,11 @@ Output: 👇
   <li>Item 1</li>
   <li>Item 2</li>
   <li>
+    For nested items:
     <ol>
       <li>Nested Item 1</li>
       <li>Nested Item 2</li>
+      <li>Nested Item 3</li>
     </ol>
   </li>
   <li>Item 3</li>
